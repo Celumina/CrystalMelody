@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrystalMelody", "CrystalMelody.vcxproj", "{FC6291BA-81D6-4EC1-B649-BE2778B0DFFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC6291BA-81D6-4EC1-B649-BE2778B0DFFD}.Debug|x64.ActiveCfg = Debug|x64
+		{FC6291BA-81D6-4EC1-B649-BE2778B0DFFD}.Debug|x64.Build.0 = Debug|x64
+		{FC6291BA-81D6-4EC1-B649-BE2778B0DFFD}.Release|x64.ActiveCfg = Release|x64
+		{FC6291BA-81D6-4EC1-B649-BE2778B0DFFD}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83EC31D9-B8CA-4EB4-9A80-CBDB9A9294B0}
+	EndGlobalSection
+EndGlobal

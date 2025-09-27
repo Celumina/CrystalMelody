@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrystalMelodyClass</class>
+ <widget class="CrystalFramelessWidget" name="CrystalMelodyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>CrystalMelody</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="CrystalMelody.qrc">
+    <normaloff>:/CrystalMelody/Resource/Graphics/icon.ico</normaloff>:/CrystalMelody/Resource/Graphics/icon.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#CrystalMelodyClass{}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="labelFrame">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>300</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(220, 220, 220, 240);
+border-top-right-radius: 21px;
+border-bottom-right-radius: 21px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="CrystalSlider" name="sliderMain">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>102</y>
+      <width>260</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal{
+	height: 9px;
+	border: 0px;
+	border-radius: 4.495px;
+	background: rgba(200, 200, 200, 255);
+}
+
+QSlider::handle:horizontal{
+	background: rgb(90, 80, 160);
+	width: 14px;
+	height: 14px;
+	margin: -4.5px 0px -4.495px 0px;
+	border-radius: 9px;
+	border: 2px solid white;
+}
+
+QSlider::sub-page:horizontal{
+	border-radius: 4.495px;
+	margin: 0px -4.5px 0px 0px;
+	background: rgb(90, 80, 160);
+}
+QSlider::groove::hover{
+	background: rgba(190, 190, 190, 255);
+}</string>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="tracking">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPicture">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(200, 200, 200);
+border-top-left-radius: 21px;
+border-bottom-left-radius: 21px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClose">
+    <property name="geometry">
+     <rect>
+      <x>474</x>
+      <y>14</y>
+      <width>12</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 6px;
+	background-color: rgb(160, 50, 50);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgb(200, 50, 50);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonHide">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>14</y>
+      <width>12</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 6px;
+	background-color: rgb(200, 160, 100);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgb(220, 180, 100);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTitle">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Title</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelAuthor">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>55</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Author</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelLyrics">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>75</y>
+      <width>280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Designed by Celuna, Powered by Qt.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonPause">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>126</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, 128);
+	color: rgb(100, 100, 100);
+	outline: none;
+}
+
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton::checked{
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonPrev">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>126</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 0px;
+	background-color: rgba(240, 240, 240, 128);
+	color: rgb(100, 100, 100);
+	outline: none;
+}
+
+QPushButton::hover {
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonMode">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>126</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	background-color: rgba(255, 255, 255, 128);
+	color: rgb(100, 100, 100);
+	outline: none;
+}
+
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>Single</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNext">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>126</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 0px;
+	background-color: rgba(240, 240, 240, 128);
+	color: rgb(100, 100, 100);
+	outline: none;
+}
+
+QPushButton::hover {
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>-&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonLoop">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>126</y>
+      <width>40</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-color: rgba(255, 255, 255, 128);
+	color: rgb(100, 100, 100);
+	outline: none;
+}
+
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QPushButton::checked{
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="CrystalSlider" name="sliderVolume">
+    <property name="geometry">
+     <rect>
+      <x>394</x>
+      <y>13</y>
+      <width>50</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal{
+	height: 6px;
+	border: 0px;
+	border-radius: 3px;
+	background: rgba(200, 200, 200, 255);
+}
+QSlider::handle:horizontal{
+	width: 10px;
+	height: 10px;
+	margin: -4px 0px -4px 0px;
+	border: 2px solid white;
+	border-radius: 7px;
+	background-color: rgb(5, 110, 180);
+
+}
+QSlider::sub-page:horizontal{
+	border-radius: 3px;
+	margin: 0px -3px 0px 0px;
+	background-color: rgb(5, 110, 180);
+}
+QSlider::groove::hover{
+	background: rgba(190, 190, 190, 255);
+}</string>
+    </property>
+    <property name="maximum">
+     <number>127</number>
+    </property>
+    <property name="value">
+     <number>127</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFilter">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>164</y>
+      <width>60</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	color: rgb(120, 120, 120);
+	border-bottom-right-radius: 20px;
+	background-color: rgba(240, 240, 240, 128);
+}
+
+QLineEdit::hover {
+		background-color: rgba(255, 255, 255, 180);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Filter</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxList">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>164</y>
+      <width>240</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	color: rgb(120, 120, 120);
+	border-radius: 0px;
+	background-color: rgba(240, 240, 240, 128);
+}
+
+QComboBox::hover {
+	background-color: rgba(255, 255, 255, 180);
+}
+
+QComboBox::on {
+	background-color: rgba(255, 255, 255, 200);
+	border: 0px solid rgb(45, 150, 200);
+}
+
+QComboBox::drop-down {
+	width: 12px;
+	height: 12px;
+	margin: 4px 4px 0px 0px;
+	background-color: rgba(200, 200, 200, 0);
+	border-radius: 6px;
+
+}
+
+QComboBox::drop-down::hover {
+	background-color: rgba(180, 180, 180, 0);
+}
+
+QComboBox::down-arrow {
+}
+
+QComboBox QAbstractItemView {
+	background-color: rgba(255, 255, 255, 220);
+	border-radius: 6px;
+	padding: 6px;
+	outline: 0px solid white;
+	border: 0px solid white;
+	margin: 3px 0px 0px 0px;
+}
+
+QComboBox QAbstractItemView::item {
+	color: rgb(120, 120, 120);
+}
+
+
+QComboBox QAbstractItemView::item:hover {
+	background-color: rgba(45, 150, 220, 100);
+	border-radius: 6px;
+
+}
+
+
+QComboBox QAbstractItemView::item:selected {
+	background-color: rgba(5, 110, 180, 100);
+	border-radius: 6px;
+}
+
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    width:6px;
+	border-radius: 3px; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+QComboBox QAbstractScrollArea QScrollBar::add-page:vertical {
+    width:6px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+QComboBox QAbstractScrollArea QScrollBar::sub-page:vertical {
+    width:6px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+    border-radius: 3px; 
+    background: rgb(200,200,200);
+	min-height: 6px;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical:hover {
+    background: rgb(5, 110, 180);
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical:pressed {
+    background: rgb(5, 110, 180);
+}
+
+QComboBox QAbstractScrollArea QScrollBar::add-line:vertical {
+    width: 0px;
+	height: 0px;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::sub-line:vertical {
+    width: 0px;
+	height: 0px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidgetMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>14</y>
+      <width>200</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::tab-bar {
+left: 14px; 
+alignment: center;
+}
+
+QTabWidget::pane {
+border: none;
+background-color: transparent;
+}
+
+QTabBar {
+qproperty-drawBase: 0;
+}
+
+QTabBar::tab {
+width: 43px;
+height: 20px;
+padding: 0px;
+color: #666666;
+background-color: #EEEEEE;
+}
+
+QTabBar::tab::hover {
+background-color: #FFFFFF;
+}
+
+QTabBar::tab:selected {
+background-color: #056eb4;
+color: #ffffff;
+}
+
+QTabBar::tab::first {
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+
+QTabBar::tab::last {
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+}
+</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tabFile">
+     <attribute name="title">
+      <string>File</string>
+     </attribute>
+     <widget class="QWidget" name="gridWidgetFile" native="true">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>10</y>
+        <width>172</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QGridLayout" name="gridLayoutFile">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>2</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButtonFileOpenFolder">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: rgba(240, 240, 240, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Open Folder</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButtonFileUnpack">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: rgba(240, 240, 240, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Unpack</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonFileOpen">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: rgba(255, 255, 255, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButtonFilePack">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: rgba(255, 255, 255, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Pack</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButtonFileSaveThumbnailAs">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: rgba(255, 255, 255, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Save Thumbnail As</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabSettings">
+     <attribute name="title">
+      <string>Settings</string>
+     </attribute>
+     <widget class="QWidget" name="gridWidgetSettings" native="true">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>10</y>
+        <width>172</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QGridLayout" name="gridLayoutFile_3">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>2</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButtonSettingsStayOnTop">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: rgba(240, 240, 240, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton::checked{
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Stay on Top</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonSettingsDynamic">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: rgba(255, 255, 255, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton::checked{
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Dynamic Desktop</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButtonSettingsLowFocus">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri</family>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 79px;
+	height: 20px;
+	color: rgb(120, 120, 120);
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	background-color: rgba(255, 255, 255, 200);
+	outline: none;
+}
+QPushButton::hover{
+	background-color: rgba(255, 255, 255, 240);
+}
+
+QPushButton::pressed {
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton::checked{
+	background-color: rgb(5, 110, 180);
+	color: rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Low Focus</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabWindow">
+     <attribute name="title">
+      <string>Window</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tabAbout">
+     <attribute name="title">
+      <string>About</string>
+     </attribute>
+    </widget>
+   </widget>
+   <zorder>labelFrame</zorder>
+   <zorder>labelPicture</zorder>
+   <zorder>sliderMain</zorder>
+   <zorder>pushButtonClose</zorder>
+   <zorder>pushButtonHide</zorder>
+   <zorder>labelTitle</zorder>
+   <zorder>labelAuthor</zorder>
+   <zorder>labelLyrics</zorder>
+   <zorder>pushButtonPause</zorder>
+   <zorder>pushButtonPrev</zorder>
+   <zorder>pushButtonMode</zorder>
+   <zorder>pushButtonNext</zorder>
+   <zorder>pushButtonLoop</zorder>
+   <zorder>comboBoxList</zorder>
+   <zorder>sliderVolume</zorder>
+   <zorder>lineEditFilter</zorder>
+   <zorder>tabWidgetMenu</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CrystalSlider</class>
+   <extends>QSlider</extends>
+   <header>CrystalSlider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CrystalFramelessWidget</class>
+   <extends>QWidget</extends>
+   <header>crystalframelesswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="CrystalMelody.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonClose</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonClose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>498</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonHide</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonHide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>498</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderVolume</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>changedSliderVolume(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPause</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonPause(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxList</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>changedComboBoxList(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonPrev</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonPrev()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonNext</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>403</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonMode</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonMode()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFileOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonFileOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>27</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFileOpenFolder</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonFileOpenFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>160</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFilePack</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonFilePack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFileUnpack</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonFileUnpack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>254</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSettingsDynamic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>toggledPushButtonSettingsDynamic(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>206</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditFilter</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>changedLineEditerFilter(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFileSaveThumbnailAs</sender>
+   <signal>clicked()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>clickedPushButtonFileSaveThumbnailAs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSettingsStayOnTop</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>toggledPushButtonStayOnTop(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderMain</sender>
+   <signal>sliderReleased()</signal>
+   <receiver>CrystalMelodyClass</receiver>
+   <slot>releasedSliderMain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>422</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>591</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clickedPushButtonClose()</slot>
+  <slot>clickedPushButtonHide()</slot>
+  <slot>clickedPushButtonFile()</slot>
+  <slot>clickedPushButtonFileOpen()</slot>
+  <slot>changedSliderVolume(int)</slot>
+  <slot>releasedSliderMain()</slot>
+  <slot>clickedPushButtonPause(bool)</slot>
+  <slot>clickedPushButtonFileOpenFolder()</slot>
+  <slot>changedComboBoxList(int)</slot>
+  <slot>clickedPushButtonSettings()</slot>
+  <slot>clickedPushButtonWindow()</slot>
+  <slot>clickedPushButtonAbout()</slot>
+  <slot>clickedPushButtonPrev()</slot>
+  <slot>clickedPushButtonNext()</slot>
+  <slot>clickedPushButtonMode()</slot>
+  <slot>clickedPushButtonFilePack()</slot>
+  <slot>clickedPushButtonFileUnpack()</slot>
+  <slot>triggeredSliderMain()</slot>
+  <slot>toggledPushButtonSettingsDynamic(bool)</slot>
+  <slot>changedLineEditerFilter(QString)</slot>
+  <slot>clickedPushButtonFileSaveThumbnailAs()</slot>
+  <slot>toggledPushButtonStayOnTop(bool)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/CrystalMelody">
+        <file>Resource/Graphics/icon.ico</file>
+        <file>Resource/Graphics/defaultThumbnailImage.png</file>
+        <file>Resource/Graphics/ParentFolder.ico</file>
+    </qresource>
+</RCC>
