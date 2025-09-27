@@ -1,0 +1,97 @@
+QTableView {
+    color:#606060;
+    background: #FFFFFF;
+    alternate-background-color: #F0F0F0;
+    border: 0 px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+QTableView::item:selected {
+    background: #8588BB;
+    color: #FFFFFF;
+}
+
+
+QTableView::item:hover {
+    background: #DDDDDD;
+    border-radius: 6px;
+}
+
+QTableView::item:selected:hover {
+    background: #7A80BB;
+    border-radius: 0px;
+}
+
+QHeaderView::section {
+    background: #9DA0C5;
+    color: #FFFFFF;
+    border: 0px;
+    padding-top: 6px;
+    padding-left:10px;
+    font: bold;
+}
+
+QHeaderView::section:hover {
+    background: #8588BB;
+}
+
+QHeaderView::section:pressed {
+    background: #7D80B5;
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+QScrollBar {
+    background: #FFFFFF;
+    border: 0px;
+}
+
+QScrollBar:vertical {
+    max-width: 12px;
+}
+
+QScrollBar:horizontal {
+    max-height: 12px;
+}
+
+QScrollBar::handle {
+    background: #9DA0C5;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:hover {
+    background: #9090BB;
+}
+
+QScrollBar::handle:pressed {
+    background: #7D80B5;
+}
+
+QScrollBar::sub-line {
+    background: #9DA0C5;
+    border-radius: 6px;
+    height: 0px;
+}
+
+QScrollBar::add-line {
+    background: #9DA0C5;
+    border-radius: 6px;
+    height: 0px;
+}
+
+QScrollBar::add-page {
+    background: #FFFFFF;
+}
+
+QScrollBar::sub-page {
+    background: #FFFFFF;
+}
