@@ -15,8 +15,13 @@ CrystalMelody is a media player capable of previewing files in various formats. 
 
 - **Aquire Music Thumbnail**: *CrystalMelody* allows you save the current music thumbnail as an independent image file.
 
+## Preview
+
+![preview](Resource/Preview.png)
+
 ## Future Works
 - **Pin Lyrics into Windows Taskbar**
 - **New Pack Format and Package Explorer**
 - **Dynamic UI Following Music Style**
 - **Support for More Media Types**
+
